@@ -19,8 +19,8 @@ public:
 
 
 int solution(vector<int> food_times, long long k) {
-	long long answer = 0;
-	long long fsize = food_times.size();
+	int answer = 0;
+	int fsize = food_times.size();
 
 	long long sum=0;
 	for (int i = 0; i < fsize; i++) {
@@ -39,8 +39,8 @@ int solution(vector<int> food_times, long long k) {
 		q.push(f);
 	}
 
-	long long len = fsize;
-	long long ate=0;
+	int len = fsize;
+	int ate=0;
 
 	while (k >= len) {
 
@@ -93,10 +93,8 @@ int solution(vector<int> food_times, long long k) {
 			clear[0].push(f.index);
 	}
 
-	if (clear[0].size() == fsize)
-		return -1;
 
-	long long index = k+1;
+	int index = k+1;
 
 	int ind = 0;
 	while (1)

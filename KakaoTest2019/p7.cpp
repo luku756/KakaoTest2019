@@ -499,6 +499,9 @@ int solution(vector<vector<int>> board) {
 	}
 
 
+	//cover(board);
+	//print(board);
+
 	int answer = 0;
 	int res;
 	int ck = -1;
@@ -514,7 +517,32 @@ int solution(vector<vector<int>> board) {
 			}
 		}
 	}
-	
+	//while (1) {
+	//	bool ck = checkremove(board);
+	//	if (ck) {
+	//		//print(board);
+	//		cover(board);
+	//		//print(board);
+	//		answer++;
+	//	}
+	//	else
+	//		break;
+
+	//}
+
+	//printf("\n");
+	//printf("\n");
+	//cover(board);
+
+
+	//for (int i = 0; i < n; i++) {
+	//	int cnt = 0;
+	//	for (int j = 0; j < n; j++) {
+	//		printf("%d ", board[i][j]);
+	//	}
+	//	printf("\n");
+	//}
+
 	return answer;
 }
 
